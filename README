@@ -1,0 +1,18 @@
+roda - ruby Open DisAssembler
+=============================
+
+roda is meant to be our take on the concept of IDA, the excellent
+Interactive DisAssembler (http://www.hex-rays.com/idapro/).
+
+We aim for something more akin to gdb (backend with many frontends) that is open source and very easy to modify.
+
+Ideally, the "command line" default interface will be a real
+programming language (preferrably Ruby, maybe Python) with functions
+to perform the kinds of operations you'd like to perform, so that
+there is a transparent line between power use of the program and
+extending it.
+
+The name: roda (pronounced O-DA) means "circle" in Portuguese, and
+specifically when people gather to practice Capoeira they form a
+circle called "roda" in the middle of which people play. It is a
+temporary code name.

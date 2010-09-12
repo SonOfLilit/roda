@@ -1,0 +1,80 @@
+pre-work research
+=================
+
+Author: AHS
+
+
+Before we start coding, we should be aware of current
+offerings. Perhaps the project is not even needed.
+
+So first of all, there is the excellent IDA:
+
+http://www.hex-rays.com/idapro/
+
+
+Next, there are a few other projects trying to be IDA, all of them
+open source, some with a command line interface:
+
+* radare seems very interesting, enough that we may want to just help
+  them. Check it out in depth:
+
+  http://www.radare.org/new/?
+
+* Bastard is both a library that could be useful (it is used on
+  another project - lida) and an environment very much like what we'd
+  want. They also have a GUI in the works. They have a DB. Worth
+  perusing their site in depth, as they also talk about
+  implementation:
+
+  http://bastard.sourceforge.net/
+
+* lida - there should be much to say about them but I'm in a
+  hurry. They even support symbols, and they have nice
+  analysis. Should peruse site in depth, they talk about
+  implementation:
+
+  http://lida.sourceforge.net/
+
+* LDasm - tries to be W32Dasm:
+
+  http://www.feedface.com/projects/ldasm.html
+
+* HT doesn't seem alive, but there is a lot to learn. They support
+  symbols. The GUI is like Turbo-C:
+
+  http://hte.sourceforge.net/screenshots.html
+
+* Borg doesn't seem interesting or alive, but I didn't download it:
+
+  http://www.caesum.com/download.php
+
+There are also libraries that we could base our work on:
+
+* Beaengine is a disassembly library that some of the other projects I
+  saw worked with, it is written in C and has Python bindings (so ruby
+  should be easy). It can emit "intel syntax for Nasm, masm32 and
+  masm64, GoAsm32 and GoAsm64, fasm and AT&T syntax". It can also emit
+  a struct with a lot of info.
+
+  http://www.beaengine.org/
+
+* libdisasm is the bastart backend (see above)
+
+* metasm seems to be much more than a ruby assembler. It might even do
+  everything we want - I saw graph view on the website:
+
+  http://metasm.cr0.org/
+
+Worth mentioning is the x86 reference http://www.sandpile.org/
+
+Also, this was useful in research:
+http://www.woodmann.com/collaborative/tools/index.php/Category:Disassemblers
+
+
+Note: a cool feature for roda is to have a "tooltip" function that
+gives you full description of the selected opcode, like:
+
+-------------------
+> tooltip assemble("DIV AX")
+Assigns AX = AX/DX, affecting LF, ZF, ...
+-------------------
